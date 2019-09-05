@@ -10,3 +10,5 @@ def display_Banner():
     print(f'\n {stars} \n, {msg} \n')
 
 #josh 
+
+print('This is how you work the program')
