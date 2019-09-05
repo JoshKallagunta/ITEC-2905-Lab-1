@@ -45,25 +45,21 @@ while keep_going == 'y':
             elif user_input == 'scissors' and computer_choice == 'rock':
                 print('Sorry, You lose.')
             else:
-                break
+                pass
             
-            keep_going = input('Do you want to play again? Type "y" for yes. ')
 
             #This lets the user either keep playing or stop playing the game
             #'y' will keep it going, 'n' will stop the game 
+            keep_going = input('Do you want to play again? Type "y" for yes. Type "n" for no. ')
 
-            #*Running into an error with this, fixing...*
-            
-            #end_game = input('Do you want to end the game? Type n. ')
-
-           # if keep_going == 'y':
-               # print('Continue Playing! ')
-           # elif end_game == 'n':
-               # print('Thanks for playing! ')
-              #  break
+            if keep_going == 'y':
+               print('Continue Playing! ')
+            elif end_game == 'n':
+                print('Thanks for playing! ')
+                break
 
 
-
+#fixed issues with the program
 
 
 
