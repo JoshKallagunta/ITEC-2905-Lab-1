@@ -1,7 +1,10 @@
 #Josh Kallagunta
 import random
 
-while True:
+keep_going = 'y'
+
+
+while keep_going == 'y':
 
     #Setting up the game, getting user input, making it lowercase to make it work with the list 
 	user_input = str(input('\nChose rock, paper, or sissors! '))
@@ -40,15 +43,19 @@ while True:
             elif user_input == 'scissors' and computer_choice == 'rock':
                 print('Sorry, You lose.')
             else:
-                print('Invalid Choice')
+                break
+            
+            keep_going = input('Do you want to play again? Type y for yes. ')
 
-#Tried to create a way out of the while True loop, but needs a bit more work 
-           # end_game = 'y'
-           # end_game = input('Do you want to end the game? Type y for yes. ')
+            
+            #end_game = 'n'
+            #end_game = input('Do you want to end the game? Type n. ')
 
-          #  if end_game == 'y':
-               # print('Thanks for playing!')
-              #  break
+            #if end_game == 'n':
+                #print('Thanks for playing!')
+                #break
+            #else: 
+                #pass
 
 
 
