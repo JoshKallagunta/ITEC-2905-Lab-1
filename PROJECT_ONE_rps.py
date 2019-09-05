@@ -1,8 +1,10 @@
 #Josh Kallagunta
 import random
 
+#User input that makes the game True, so that it will keep playing
+#Chosing 'n' will end the game
 keep_going = 'y'
-
+end_game = 'n'
 
 while keep_going == 'y':
 
@@ -45,17 +47,17 @@ while keep_going == 'y':
             else:
                 break
             
-            keep_going = input('Do you want to play again? Type y for yes. ')
+            #This lets the user either keep playing or stop playing the game
+            #'y' will keep it going, 'n' will stop the game 
+            keep_going = input('Do you want to play again? Type "y" for yes. ')
+            end_game = input('Do you want to end the game? Type n. ')
 
-            
-            #end_game = 'n'
-            #end_game = input('Do you want to end the game? Type n. ')
+            if keep_going == 'y':
+                print('Continue Playing! ')
+            elif end_game == 'n':
+                print('Thanks for playing! ')
+                break
 
-            #if end_game == 'n':
-                #print('Thanks for playing!')
-                #break
-            #else: 
-                #pass
 
 
 
