@@ -1,4 +1,6 @@
 
+
+
 classes = []
 what_classes = int(input('How many classes are you taking this semester? '))
 
